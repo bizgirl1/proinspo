@@ -1,3 +1,5 @@
+// script.js
+
 document.addEventListener('DOMContentLoaded', function() {
     // Get elements
     const lifeGoalsDropdown = document.getElementById('life-goals');
