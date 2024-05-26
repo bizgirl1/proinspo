@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Social Media Platform</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Goals App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Social Media Platform</h1>
-    <div id="posts-container"></div>
-    <form id="post-form">
-      <textarea id="post-text" placeholder="Write something..."></textarea>
-      <button type="submit">Post</button>
-    </form>
-  </div>
+    <div class="container">
+        <h1>Life Goals App</h1>
+        <!-- Section 1: Life Goals, Struggles, and Big Why -->
+        <div class="section">
+            <h2>1. Life Goals</h2>
+            <div class="dropdown">
+                <label for="life-goals">Choose your life goal:</label>
+                <select id="life-goals">
+                    <option value="finance">Finance</option>
+                    <option value="health">Health</option>
+                    <option value="career">Career/Business</option>
+                    <option value="spirituality">Spirituality</option>
+                    <option value="emotional">Emotional & Mental Health</option>
+                    <option value="holistic">Holistic Living</option>
+                </select>
+            </div>
+            <!-- Add similar dropdowns for struggles and big why -->
+        </div>
 
-  <script src="script.js"></script>
+        <!-- Section 2: Inspirational Quotes -->
+        <div class="section">
+            <h2>2. Inspirational Quotes</h2>
+            <div id="inspirational-quotes"></div>
+        </div>
+
+        <!-- Section 3: Goal Setter -->
+        <div class="section">
+            <h2>3. Goal Setter</h2>
+            <div id="goal-setter">
+                <input type="text" id="main-goal" placeholder="Enter your main goal">
+                <button id="add-sub-goal">Add Sub Goal</button>
+                <div id="sub-goals"></div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div id="bottom-section">
+            <p id="goal-status"></p>
+            <p>You are doing amazing! Keep going :)</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
