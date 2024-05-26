@@ -1,50 +1,78 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White container background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
-h1 {
-  text-align: center;
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; /* Dark grey text color */
 }
 
-#posts-container {
-  margin-top: 20px;
+.section {
+    margin-bottom: 30px;
 }
 
-.post {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 10px;
+.dropdown {
+    margin-bottom: 20px;
 }
 
-.comments {
-  margin-top: 10px;
+.dropdown label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-.comment {
-  margin-bottom: 5px;
+.dropdown select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px;
 }
 
-#post-form {
-  margin-top: 20px;
+#inspirational-quotes {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light grey background */
 }
 
-#post-text {
-  width: 100%;
-  margin-bottom: 10px;
+#goal-setter input[type="text"] {
+    width: calc(100% - 120px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+#add-sub-goal {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4CAF50; /* Green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sub-goals {
+    margin-top: 10px;
+}
+
+#bottom-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#goal-status {
+    font-weight: bold;
 }
